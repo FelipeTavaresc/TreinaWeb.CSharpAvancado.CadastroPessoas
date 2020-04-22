@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace TreinaWeb.CadastroPessoas.Repositorio
 {
-    public class Class1
+    public interface IRepositorio<TTipo>
     {
+        List<TTipo> SelecionarTodos();
+        int Adicionar(TTipo objeto);
     }
 }
