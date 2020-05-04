@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroPessoas.Dominio", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroPessoas.Persistencia.NHibernate", "CadastroPessoas.Persistencia.NHibernate\CadastroPessoas.Persistencia.NHibernate.csproj", "{CFD69ADA-96A0-4D48-81C7-58D872808C50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.CSharpAvancado.CadastroPessoa.WPF", "TW.CSharpAvancado.CadastroPessoa.WPF\TW.CSharpAvancado.CadastroPessoa.WPF.csproj", "{51B7ACCD-A2C7-4D80-9DD3-4EA8EC95B5A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CFD69ADA-96A0-4D48-81C7-58D872808C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFD69ADA-96A0-4D48-81C7-58D872808C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFD69ADA-96A0-4D48-81C7-58D872808C50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51B7ACCD-A2C7-4D80-9DD3-4EA8EC95B5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B7ACCD-A2C7-4D80-9DD3-4EA8EC95B5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B7ACCD-A2C7-4D80-9DD3-4EA8EC95B5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B7ACCD-A2C7-4D80-9DD3-4EA8EC95B5A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
