@@ -15,6 +15,8 @@ namespace TreinaWeb.CSharpAvancado.CadastroPessoas
 {
     public partial class FrmPessoas : Form
     {
+        private List<Pessoa> _pessoas = new List<Pessoa>();
+
         public FrmPessoas()
         {
             InitializeComponent();
@@ -29,9 +31,16 @@ namespace TreinaWeb.CSharpAvancado.CadastroPessoas
         private void PreencherDataGridView()
         {
             Thread.Sleep(5000);
+            Thread thread = new Thread(PreencherListaPessoas);
+            thread.Start();
+            thread.Join();
+            dgvPessoas.Invoke((MethodInvoker)delegate { dgvPessoas.DataSource = _pessoas; dgvPessoas.Refresh(); });
+        }
+
+        private void PreencherListaPessoas()
+        {
             IRepositorio<Pessoa> repositorioPessoa = new PessoaRepositorio();
-            List<Pessoa> pessoas = repositorioPessoa.SelecionarTodos();
-            dgvPessoas.Invoke((MethodInvoker)delegate { dgvPessoas.DataSource = pessoas; dgvPessoas.Refresh(); });
+            _pessoas = repositorioPessoa.SelecionarTodos();
         }
 
         private void btnAdicionarPessoa_Click(object sender, EventArgs e)
